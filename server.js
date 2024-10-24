@@ -30,10 +30,6 @@ function initial() {
     Role.create({
         id: 2,
         name: 'admin'
-    }),
-    Role.create({
-        id: 3,
-        name: 'creator'
     })
 }
 

@@ -1,10 +1,9 @@
 const config = require('../db.config.js')
+require('dotenv').config()
 
 const Sequalize = require('sequelize')
 const sequalize = new Sequalize(
-    config.DATABASE,
-    config.USER,
-    config.PASSWORD,
+    process.env.POSTGRES_URL,
     {
         host: config.HOST,
         dialect: config.dialect,
